@@ -35,14 +35,52 @@ Initially we started with making our work desk smart. For this we placed an IR s
 <ul>
     <li>
         <p>IR Sensor<br/>IR sensor is an electronic device that emits light in order to sense some object of the surroundings. An IR sensor can measure the heat of an object as well as detect the motion. Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation.</p>
+        <div style="text-align: center">
         <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/irsensor.jpg?raw=true" alt="ir-sensor">
+        </div>
     </li>
     <li>
         <p>4ch Relays<br/>A power relay module is an electrical switch that is operated by an electromagnet. The electromagnet is activated by a separate low-power signal from a microcontroller. When activated, the electromagnet pulls to either open or close an electrical circuit.</p>
+        <div style="text-align: center">
         <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/4chrelay.jpeg?raw=true" alt="4ch-relay">
+        </div>
     </li>
     <li>
         <p>W5100S-EVB-Pico<br/>WIZnet Pico is a microcontroller evaluation board based on the Raspberry Pi RP2040 and fully hardwired TCP/IP controller W5100S – and basically works the same as Raspberry Pi Pico board but with additional Ethernet via W5100S.</p>
-        <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/wiznet-pico.png?raw=true" alt="wiznet-pico">
+        <div style="text-align: center">
+            <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/wiznet-pico.png?raw=true" alt="wiznet-pico">
+        </div>
     </li>
 </ul>
+<br/>
+<h2>Circuit Diagram</h2>
+<div style="text-align: center">
+    <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/circuit-diagram.png?raw=true" alt="circuit-diagram">
+</div>
+<div style="text-align: center">
+    <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product4.jpeg?raw=true" alt="camera-circuit">
+    <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product8.jpeg?raw=true" alt="ir-and-relay-circuit">
+</div>
+<br/>
+<h2>Explaination</h2>
+<h3>Circuit</h3>
+<p>The VCC & GND pins of Camera, IR sensor and 4ch Relay are connected to VCC and GND respectively. The IR sensor’s DOUT pin is connected to  GP1  of the WIZnet Pico 1 which wakes up the camera. If the camera detects any human face, it will turn HIGH the GP1 of WIZnet Pico 2 which will make the 4 INPUT pins of 4ch Relay connected to GP2,GP3,GP4 and GP5 of the WIZnet Pico 2 HIGH.<br>
+So when any human comes before the device it will turn on/off the devices connected to the Relay as configured. 
+<br>
+<h3>Code<h3>
+First we initialized the variables R1, R2, R3, R4 to GPIO PINS 2,3,4,5 respectively. These pins aue OUTPUT pins and used to control the Relay. One more variable REL_IN is initialized as an INPUT pin on GPIO 1.
+<br>
+Inside the setup function sets the above mentioned pins to their respective modes. Sets the BUILTIN LED as OUTPUT and begins serial logging.
+<br>
+The loop function runs recursively and prints the value of REL_IN i.e. input for the relay. If the REL_IN is logic 1 then it will make all the relays as high ie R1, R2, R3, R4 as HIGH along the BUILTIN_LED else make these as LOW.
+</p>
+<br>
+<h2>Images</h2>
+<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product1.jpeg?raw=true" alt="product"></div>
+<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product2.jpeg?raw=true" alt="product"></div>
+<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product3.jpeg?raw=true" alt="product"></div>
+<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product4.jpeg?raw=true" alt="product"></div>
+<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product5.jpeg?raw=true" alt="product"></div>
+<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product6.jpeg?raw=true" alt="product"></div>
+<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product7.jpeg?raw=true" alt="product"></div>
+<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product8.jpeg?raw=true" alt="product"></div>
