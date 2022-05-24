@@ -1,4 +1,5 @@
 <h1>Smart Desk</h1>
+<img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product1.jpeg?raw=true" alt="product">
 <h2>How to Use IR SENSOR module and RELAY module with WIZnet W5100S-EVB-Pico</h2>
 <p>In this project we will make our existing work desk a smart one. We will control all our electronic gadgets with a Relay Module equipped with an IR sensor.
 When the IR sensors detect any object i.e. anyone is sitting on the desk, depending on how the pins are configured, it will turn on/off the charger, monitor and other devices connected to the Relay Module.
