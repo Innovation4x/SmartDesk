@@ -1,5 +1,5 @@
 <h1>Smart Desk</h1>
-<div style="text-align:center"><img style="width:20rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product1.jpeg?raw=true" alt="product"></div>
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product1.jpeg?raw=true" alt="product">
 <h2>How to Use IR SENSOR module and RELAY module with WIZnet W5100S-EVB-Pico</h2>
 <p>In this project we will make our existing work desk a smart one. We will control all our electronic gadgets with a Relay Module equipped with an IR sensor.
 When the IR sensors detect any object i.e. anyone is sitting on the desk, depending on how the pins are configured, it will turn on/off the charger, monitor and other devices connected to the Relay Module.
@@ -36,32 +36,20 @@ Initially we started with making our work desk smart. For this we placed an IR s
 <ul>
     <li>
         <p>IR Sensor<br/>IR sensor is an electronic device that emits light in order to sense some object of the surroundings. An IR sensor can measure the heat of an object as well as detect the motion. Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation.</p>
-        <div style="text-align: center">
-        <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/irsensor.jpg?raw=true" alt="ir-sensor">
-        </div>
+        <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/irsensor.jpg?raw=true" alt="ir-sensor">
     </li>
     <li>
         <p>4ch Relays<br/>A power relay module is an electrical switch that is operated by an electromagnet. The electromagnet is activated by a separate low-power signal from a microcontroller. When activated, the electromagnet pulls to either open or close an electrical circuit.</p>
-        <div style="text-align: center">
-        <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/4chrelay.jpeg?raw=true" alt="4ch-relay">
-        </div>
+        <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/4chrelay.jpeg?raw=true" alt="4ch-relay">
     </li>
     <li>
         <p>W5100S-EVB-Pico<br/>WIZnet Pico is a microcontroller evaluation board based on the Raspberry Pi RP2040 and fully hardwired TCP/IP controller W5100S – and basically works the same as Raspberry Pi Pico board but with additional Ethernet via W5100S.</p>
-        <div style="text-align: center">
-            <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/wiznet-pico.png?raw=true" alt="wiznet-pico">
-        </div>
+            <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/wiznet-pico.png?raw=true" alt="wiznet-pico">
     </li>
 </ul>
 <br/>
 <h2>Circuit Diagram</h2>
-<div style="text-align: center">
-    <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/circuit-diagram.png?raw=true" alt="circuit-diagram">
-</div>
-<div style="text-align: center">
-    <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product4.jpeg?raw=true" alt="camera-circuit">
-    <img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product8.jpeg?raw=true" alt="ir-and-relay-circuit">
-</div>
+    <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/circuit-diagram.png?raw=true" alt="circuit-diagram">
 <br/>
 <h2>Explaination</h2>
 <h3>Circuit</h3>
@@ -77,11 +65,11 @@ The loop function runs recursively and prints the value of REL_IN i.e. input for
 </p>
 <br>
 <h2>Images</h2>
-<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product1.jpeg?raw=true" alt="product"></div>
-<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product2.jpeg?raw=true" alt="product"></div>
-<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product3.jpeg?raw=true" alt="product"></div>
-<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product4.jpeg?raw=true" alt="product"></div>
-<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product5.jpeg?raw=true" alt="product"></div>
-<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product6.jpeg?raw=true" alt="product"></div>
-<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product7.jpeg?raw=true" alt="product"></div>
-<div style="text-align: center"><img src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product8.jpeg?raw=true" alt="product"></div>
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product1.jpeg?raw=true" alt="product">
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product2.jpeg?raw=true" alt="product">
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product3.jpeg?raw=true" alt="product">
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product4.jpeg?raw=true" alt="product">
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product5.jpeg?raw=true" alt="product">
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product6.jpeg?raw=true" alt="product">
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product7.jpeg?raw=true" alt="product">
+<img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product8.jpeg?raw=true" alt="product">
