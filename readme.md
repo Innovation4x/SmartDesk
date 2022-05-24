@@ -32,7 +32,7 @@ When the IR sensors detect any object i.e. anyone is sitting on the desk, depend
 Initially we started with making our work desk smart. For this we placed an IR sensor on the desk which will detect if anyone is sitting on the desk, and toggle its output. The IR sensor is connected to a microcontroller which controls the Relays based on the output of the IR sensor.
 </p>
 <br/>
-<h2>Components</p>
+<h2>Components</h2>
 <ul>
     <li>
         <p>IR Sensor<br/>IR sensor is an electronic device that emits light in order to sense some object of the surroundings. An IR sensor can measure the heat of an object as well as detect the motion. Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation.</p>
@@ -55,8 +55,10 @@ Initially we started with making our work desk smart. For this we placed an IR s
 <h3>Circuit</h3>
 <p>The VCC & GND pins of Camera, IR sensor and 4ch Relay are connected to VCC and GND respectively. The IR sensor’s DOUT pin is connected to  GP1  of the WIZnet Pico 1 which wakes up the camera. If the camera detects any human face, it will turn HIGH the GP1 of WIZnet Pico 2 which will make the 4 INPUT pins of 4ch Relay connected to GP2,GP3,GP4 and GP5 of the WIZnet Pico 2 HIGH.<br>
 So when any human comes before the device it will turn on/off the devices connected to the Relay as configured. 
+</p>
 <br>
 <h3>Code<h3>
+<p>
 First we initialized the variables R1, R2, R3, R4 to GPIO PINS 2,3,4,5 respectively. These pins aue OUTPUT pins and used to control the Relay. One more variable REL_IN is initialized as an INPUT pin on GPIO 1.
 <br>
 Inside the setup function sets the above mentioned pins to their respective modes. Sets the BUILTIN LED as OUTPUT and begins serial logging.
