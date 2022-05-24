@@ -35,15 +35,15 @@ Initially we started with making our work desk smart. For this we placed an IR s
 <h2>Components</h2>
 <ul>
     <li>
-        <p>IR Sensor<br/>IR sensor is an electronic device that emits light in order to sense some object of the surroundings. An IR sensor can measure the heat of an object as well as detect the motion. Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation.</p>
+        <p><strong>IR Sensor</strong><br/>IR sensor is an electronic device that emits light in order to sense some object of the surroundings. An IR sensor can measure the heat of an object as well as detect the motion. Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation.</p>
         <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/irsensor.jpg?raw=true" alt="ir-sensor">
     </li>
     <li>
-        <p>4ch Relays<br/>A power relay module is an electrical switch that is operated by an electromagnet. The electromagnet is activated by a separate low-power signal from a microcontroller. When activated, the electromagnet pulls to either open or close an electrical circuit.</p>
+        <p><strong>4ch Relays</strong><br/>A power relay module is an electrical switch that is operated by an electromagnet. The electromagnet is activated by a separate low-power signal from a microcontroller. When activated, the electromagnet pulls to either open or close an electrical circuit.</p>
         <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/4chrelay.jpeg?raw=true" alt="4ch-relay">
     </li>
     <li>
-        <p>W5100S-EVB-Pico<br/>WIZnet Pico is a microcontroller evaluation board based on the Raspberry Pi RP2040 and fully hardwired TCP/IP controller W5100S – and basically works the same as Raspberry Pi Pico board but with additional Ethernet via W5100S.</p>
+        <p><strong>W5100S-EVB-Pico</strong><br/>WIZnet Pico is a microcontroller evaluation board based on the Raspberry Pi RP2040 and fully hardwired TCP/IP controller W5100S – and basically works the same as Raspberry Pi Pico board but with additional Ethernet via W5100S.</p>
             <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/wiznet-pico.png?raw=true" alt="wiznet-pico">
     </li>
 </ul>
@@ -57,7 +57,7 @@ Initially we started with making our work desk smart. For this we placed an IR s
 So when any human comes before the device it will turn on/off the devices connected to the Relay as configured. 
 </p>
 <br>
-<h3>Code<h3>
+<h3>Code</h3>
 <p>
 First we initialized the variables R1, R2, R3, R4 to GPIO PINS 2,3,4,5 respectively. These pins aue OUTPUT pins and used to control the Relay. One more variable REL_IN is initialized as an INPUT pin on GPIO 1.
 <br>
