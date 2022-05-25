@@ -49,7 +49,7 @@ Initially we started with making our work desk smart. For this we placed an IR s
 </ul>
 <br/>
 <h2>Circuit Diagram</h2>
-    <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/circuit-diagram.png?raw=true" alt="circuit-diagram">
+    <img style="width:40rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/circuit-diagram.png?raw=true" alt="circuit-diagram">
 <br/>
 <h2>Explaination</h2>
 <h3>Circuit</h3>
@@ -66,8 +66,10 @@ When the GP0 and GP1 of WIZnet Pico 2 are HIGH and LOW respectively, the Relays 
 <p>
 First we initialized the variables R1, R2, R3, R4 to GPIO PINS 2,3,4,5 respectively. These pins aue OUTPUT pins and used to control the Relay. Two more variables CAM_IN and IR_IN are initialized to GPIO PINS 0 and 1 respectively.
 <br>
+
 The setup function sets the GPIO pins 2,3,4,5 and LED_BUILTIN to OUTPUT to control the relays and the GPIO pins 0, 1 are set to INPUT.
 <br>
+
 The loop function runs recursively and checks the INPUT from GPIO pins 0 and 1. If the GPIO 0 is HIGH and GPIO 1 is LOW, the GPIO pins 2,3,4,5 are turned HIGH to activate the relays else they are turned LOW.
 </p>
 <br>
