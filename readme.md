@@ -53,17 +53,22 @@ Initially we started with making our work desk smart. For this we placed an IR s
 <br/>
 <h2>Explaination</h2>
 <h3>Circuit</h3>
-<p>The VCC & GND pins of Camera, IR sensor and 4ch Relay are connected to VCC and GND respectively. The IR sensor’s DOUT pin is connected to  GP1  of the WIZnet Pico 1 which wakes up the camera. If the camera detects any human face, it will turn HIGH the GP1 of WIZnet Pico 2 which will make the 4 INPUT pins of 4ch Relay connected to GP2,GP3,GP4 and GP5 of the WIZnet Pico 2 HIGH.<br>
-So when any human comes before the device it will turn on/off the devices connected to the Relay as configured. 
+<p>
+The VCC & GND pins of Camera, IR sensor and 4ch Relay are connected to VCC and GND respectively. The IR sensor’s DOUT pin is connected to  GP1  of the WIZnet Pico 2 and the output from WIZnet Pico 1 is connected to GP0 of the WIZnet Pico 2. <br>
+
+If the camera detects any human face, it will turn the GP0 of WIZnet Pico 2 to HIGH and when the IR sensor detects something it will turn the GP1 of WIZnet Pico 2 to LOW.<br>
+
+When the GP0 and GP1 of WIZnet Pico 2 are HIGH and LOW respectively, the Relays connected to GP2, GP3, GP4 and GP5 are turned HIGH ie when any human is detected by the camera and the he is sitting on his desk, the microcontroller will turn on the relays.
+
 </p>
 <br>
 <h3>Code</h3>
 <p>
-First we initialized the variables R1, R2, R3, R4 to GPIO PINS 2,3,4,5 respectively. These pins aue OUTPUT pins and used to control the Relay. One more variable REL_IN is initialized as an INPUT pin on GPIO 1.
+First we initialized the variables R1, R2, R3, R4 to GPIO PINS 2,3,4,5 respectively. These pins aue OUTPUT pins and used to control the Relay. Two more variables CAM_IN and IR_IN are initialized to GPIO PINS 0 and 1 respectively.
 <br>
-Inside the setup function sets the above mentioned pins to their respective modes. Sets the BUILTIN LED as OUTPUT and begins serial logging.
+The setup function sets the GPIO pins 2,3,4,5 and LED_BUILTIN to OUTPUT to control the relays and the GPIO pins 0, 1 are set to INPUT.
 <br>
-The loop function runs recursively and prints the value of REL_IN i.e. input for the relay. If the REL_IN is logic 1 then it will make all the relays as high ie R1, R2, R3, R4 as HIGH along the BUILTIN_LED else make these as LOW.
+The loop function runs recursively and checks the INPUT from GPIO pins 0 and 1. If the GPIO 0 is HIGH and GPIO 1 is LOW, the GPIO pins 2,3,4,5 are turned HIGH to activate the relays else they are turned LOW.
 </p>
 <br>
 <h2>Images</h2>
