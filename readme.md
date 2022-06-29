@@ -130,3 +130,10 @@ The loop function runs recursively and checks the INPUT from GPIO pins 0 and 1. 
 <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product6.jpeg?raw=true" alt="product">
 <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product7.jpeg?raw=true" alt="product">
 <img style="width:25rem" src="https://github.com/Innovation4x/SmartDesk/blob/main/images/product8.jpeg?raw=true" alt="product">
+
+
+# Project details
+https://www.hackster.io/innovation4x/smart-desk-using-wiznet-evb-pico-and-tinyml-44628f
+
+# Youtube
+https://youtu.be/Iuee7WFS7Zo
